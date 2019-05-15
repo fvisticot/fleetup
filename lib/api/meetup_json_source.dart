@@ -1,4 +1,4 @@
-import 'package:fleetup/meetup_api.dart';
+import 'package:fleetup/api/meetup_api.dart';
 import 'package:flutter/cupertino.dart';
 
 class MeetupJsonSource implements MeetupApi {

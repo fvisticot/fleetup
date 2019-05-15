@@ -1,0 +1,424 @@
+[
+  {
+    "id": 30338307,
+    "name": "Flutter & Dart Bordeaux",
+    "status": "active",
+    "link": "https://www.meetup.com/Flutter-Bordeaux/",
+    "urlname": "Flutter-Bordeaux",
+    "description": "<p><span>Flutter est un framework développé par Google qui permet de concevoir rapidement et efficacement des applications natives et multiplateforme pour Android et iOS.</span>&nbsp;</p>\n<p>Ce groupe est destiné à toutes les personnes intéressées par Flutter et Flutter et qui souhaitent échanger autour de cette technologie ou bien de Google Fuschia et Firebase.&nbsp;</p>\n<p>Important : Flutter Bordeaux est un groupe indépendant. Nos activités et les opinions exprimées ne sont en aucun cas liées à Google. <br></p>\n<p>Merci et bienvenue à vous !</p>\n<p> <br></p>\n<p>Flutter Bordeaux est membre du Slack Français Flutter :&nbsp;<a href=\"https://flutter-dev.slack.com/messages/CDKBS5Y86\">https://flutter-dev.slack.com/messages/CDKBS5Y86</a></p>\n<p>Compte Twitter :&nbsp;<a href=\"https://twitter.com/FlutterBordeaux\">https://twitter.com/FlutterBordeaux</a></p>",
+    "created": 1539794579000,
+    "city": "Bordeaux",
+    "untranslated_city": "Bordeaux",
+    "country": "FR",
+    "localized_country_name": "France",
+    "localized_location": "Bordeaux, France",
+    "state": "",
+    "join_mode": "open",
+    "visibility": "public",
+    "lat": 44.84,
+    "lon": -0.58,
+    "members": 59,
+    "who": "Colibris Bordelais",
+    "key_photo": {
+      "id": 475586054,
+      "highres_link": "https://secure.meetupstatic.com/photos/event/6/5/c/6/highres_475586054.jpeg",
+      "photo_link": "https://secure.meetupstatic.com/photos/event/6/5/c/6/600_475586054.jpeg",
+      "thumb_link": "https://secure.meetupstatic.com/photos/event/6/5/c/6/thumb_475586054.jpeg",
+      "type": "event",
+      "base_url": "https://secure.meetupstatic.com"
+    },
+    "timezone": "Europe/Paris",
+    "next_event": {
+      "id": "260888219",
+      "name": "Fleetup - Les écrans de Meetup avec Flutter",
+      "yes_rsvp_count": 15,
+      "time": 1558026000000,
+      "utc_offset": 7200000
+    },
+    "category": {
+      "id": 34,
+      "name": "Tech",
+      "shortname": "tech",
+      "sort_name": "Tech"
+    },
+    "meta_category": {
+      "id": 292,
+      "shortname": "tech",
+      "name": "Tech",
+      "sort_name": "Tech",
+      "photo": {
+        "id": 450131949,
+        "highres_link": "https://secure.meetupstatic.com/photos/event/2/e/a/d/highres_450131949.jpeg",
+        "photo_link": "https://secure.meetupstatic.com/photos/event/2/e/a/d/600_450131949.jpeg",
+        "thumb_link": "https://secure.meetupstatic.com/photos/event/2/e/a/d/thumb_450131949.jpeg",
+        "type": "event",
+        "base_url": "https://secure.meetupstatic.com"
+      },
+      "category_ids": [
+        34
+      ]
+    }
+  },
+  {
+    "id": 27885484,
+    "name": "Cloud Native Computing Bordeaux",
+    "status": "active",
+    "link": "https://www.meetup.com/Cloud-Native-Computing-Bordeaux/",
+    "urlname": "Cloud-Native-Computing-Bordeaux",
+    "description": "<p>Le Cloud Native Computing utilise des briques logiciels open source afin de déployer des conteneurs, de les orchestrer et d'instrumenter ces nouvelles stacks pour les emmener jusqu'en production.</p>\n<p>Ces technologies permettent de faire évoluer des conteneurs Linux dans un écosystème distribué, résilient et élastique.</p>\n<p>Ce groupe à pour but de partager les retours d'experiences autour de ces nouvelles technologies, de partager les bonnes pratiques et de suivre et découvrir les nouvelles tendances.</p>\n<p>Pour plus d'informations sur la CNCF (<a href=\"https://cncf.io\" class=\"linkified\">https://cncf.io</a>)</p>\n<p>Suivez nous sur Twitter @cncfbdx (<a href=\"https://twitter.com/cncfbdx\" class=\"linkified\">https://twitter.com/cncfbdx</a>)</p>",
+    "created": 1521539538000,
+    "city": "Bordeaux",
+    "untranslated_city": "Bordeaux",
+    "country": "FR",
+    "localized_country_name": "France",
+    "localized_location": "Bordeaux, France",
+    "state": "",
+    "join_mode": "open",
+    "visibility": "public",
+    "lat": 44.84,
+    "lon": -0.58,
+    "members": 341,
+    "who": "Membres",
+    "group_photo": {
+      "id": 469417928,
+      "highres_link": "https://secure.meetupstatic.com/photos/event/9/4/2/8/highres_469417928.jpeg",
+      "photo_link": "https://secure.meetupstatic.com/photos/event/9/4/2/8/600_469417928.jpeg",
+      "thumb_link": "https://secure.meetupstatic.com/photos/event/9/4/2/8/thumb_469417928.jpeg",
+      "type": "event",
+      "base_url": "https://secure.meetupstatic.com"
+    },
+    "key_photo": {
+      "id": 469416895,
+      "highres_link": "https://secure.meetupstatic.com/photos/event/9/0/1/f/highres_469416895.jpeg",
+      "photo_link": "https://secure.meetupstatic.com/photos/event/9/0/1/f/600_469416895.jpeg",
+      "thumb_link": "https://secure.meetupstatic.com/photos/event/9/0/1/f/thumb_469416895.jpeg",
+      "type": "event",
+      "base_url": "https://secure.meetupstatic.com"
+    },
+    "timezone": "Europe/Paris",
+    "category": {
+      "id": 34,
+      "name": "Tech",
+      "shortname": "tech",
+      "sort_name": "Tech"
+    },
+    "meta_category": {
+      "id": 292,
+      "shortname": "tech",
+      "name": "Tech",
+      "sort_name": "Tech",
+      "photo": {
+        "id": 450131949,
+        "highres_link": "https://secure.meetupstatic.com/photos/event/2/e/a/d/highres_450131949.jpeg",
+        "photo_link": "https://secure.meetupstatic.com/photos/event/2/e/a/d/600_450131949.jpeg",
+        "thumb_link": "https://secure.meetupstatic.com/photos/event/2/e/a/d/thumb_450131949.jpeg",
+        "type": "event",
+        "base_url": "https://secure.meetupstatic.com"
+      },
+      "category_ids": [
+        34
+      ]
+    },
+    "pro_network": {
+      "name": "Cloud Native Computing Foundation (CNCF)",
+      "urlname": "cncf",
+      "number_of_groups": 194,
+      "network_url": "https://www.meetup.com/pro/cncf/"
+    }
+  },
+  {
+    "id": 14628982,
+    "name": "Jams de code",
+    "status": "active",
+    "link": "https://www.meetup.com/Jams-de-code/",
+    "urlname": "Jams-de-code",
+    "description": "<p>Le premier jeudi de chaque mois, Arolla vous accueille pour une Jam de code. Le principe est simple: venez coder avec d’autres passionnés dans une ambiance détendue ! Chacun amène son ordinateur portable, nous nous occupons du reste.</p>\n<p>Les Jams de code sont des événements informels et sans prise de tête. L'idéal pour développer dans de bonnes conditions! <br> </p>",
+    "created": 1400853781000,
+    "city": "Paris",
+    "untranslated_city": "Paris",
+    "country": "FR",
+    "localized_country_name": "France",
+    "localized_location": "Paris, France",
+    "state": "",
+    "join_mode": "open",
+    "visibility": "public",
+    "lat": 48.86,
+    "lon": 2.34,
+    "members": 1873,
+    "who": "Jammers",
+    "group_photo": {
+      "id": 442531812,
+      "highres_link": "https://secure.meetupstatic.com/photos/event/7/c/4/4/highres_442531812.jpeg",
+      "photo_link": "https://secure.meetupstatic.com/photos/event/7/c/4/4/600_442531812.jpeg",
+      "thumb_link": "https://secure.meetupstatic.com/photos/event/7/c/4/4/thumb_442531812.jpeg",
+      "type": "event",
+      "base_url": "https://secure.meetupstatic.com"
+    },
+    "key_photo": {
+      "id": 465567726,
+      "highres_link": "https://secure.meetupstatic.com/photos/event/6/c/4/e/highres_465567726.jpeg",
+      "photo_link": "https://secure.meetupstatic.com/photos/event/6/c/4/e/600_465567726.jpeg",
+      "thumb_link": "https://secure.meetupstatic.com/photos/event/6/c/4/e/thumb_465567726.jpeg",
+      "type": "event",
+      "base_url": "https://secure.meetupstatic.com"
+    },
+    "timezone": "Europe/Paris",
+    "category": {
+      "id": 34,
+      "name": "Tech",
+      "shortname": "tech",
+      "sort_name": "Tech"
+    },
+    "meta_category": {
+      "id": 292,
+      "shortname": "tech",
+      "name": "Tech",
+      "sort_name": "Tech",
+      "photo": {
+        "id": 450131949,
+        "highres_link": "https://secure.meetupstatic.com/photos/event/2/e/a/d/highres_450131949.jpeg",
+        "photo_link": "https://secure.meetupstatic.com/photos/event/2/e/a/d/600_450131949.jpeg",
+        "thumb_link": "https://secure.meetupstatic.com/photos/event/2/e/a/d/thumb_450131949.jpeg",
+        "type": "event",
+        "base_url": "https://secure.meetupstatic.com"
+      },
+      "category_ids": [
+        34
+      ]
+    }
+  },
+  {
+    "id": 5477392,
+    "name": "BordeauxJS",
+    "status": "active",
+    "link": "https://www.meetup.com/BordeauxJS/",
+    "urlname": "BordeauxJS",
+    "description": "<p>User group Web Tech à Bordeaux : réunions, discussions et live coding entre gens en asynchrone. On parle JavaScript et de web au sens large.<br></p>",
+    "created": 1350742319000,
+    "city": "Bordeaux",
+    "untranslated_city": "Bordeaux",
+    "country": "FR",
+    "localized_country_name": "France",
+    "localized_location": "Bordeaux, France",
+    "state": "",
+    "join_mode": "open",
+    "visibility": "public",
+    "lat": 44.84,
+    "lon": -0.58,
+    "members": 961,
+    "who": "Membres",
+    "group_photo": {
+      "id": 463513655,
+      "highres_link": "https://secure.meetupstatic.com/photos/event/3/5/5/7/highres_463513655.jpeg",
+      "photo_link": "https://secure.meetupstatic.com/photos/event/3/5/5/7/600_463513655.jpeg",
+      "thumb_link": "https://secure.meetupstatic.com/photos/event/3/5/5/7/thumb_463513655.jpeg",
+      "type": "event",
+      "base_url": "https://secure.meetupstatic.com"
+    },
+    "key_photo": {
+      "id": 469441342,
+      "highres_link": "https://secure.meetupstatic.com/photos/event/5/3/e/highres_469441342.jpeg",
+      "photo_link": "https://secure.meetupstatic.com/photos/event/5/3/e/600_469441342.jpeg",
+      "thumb_link": "https://secure.meetupstatic.com/photos/event/5/3/e/thumb_469441342.jpeg",
+      "type": "event",
+      "base_url": "https://secure.meetupstatic.com"
+    },
+    "timezone": "Europe/Paris",
+    "category": {
+      "id": 34,
+      "name": "Tech",
+      "shortname": "tech",
+      "sort_name": "Tech"
+    },
+    "meta_category": {
+      "id": 292,
+      "shortname": "tech",
+      "name": "Tech",
+      "sort_name": "Tech",
+      "photo": {
+        "id": 450131949,
+        "highres_link": "https://secure.meetupstatic.com/photos/event/2/e/a/d/highres_450131949.jpeg",
+        "photo_link": "https://secure.meetupstatic.com/photos/event/2/e/a/d/600_450131949.jpeg",
+        "thumb_link": "https://secure.meetupstatic.com/photos/event/2/e/a/d/thumb_450131949.jpeg",
+        "type": "event",
+        "base_url": "https://secure.meetupstatic.com"
+      },
+      "category_ids": [
+        34
+      ]
+    }
+  },
+  {
+    "id": 31052668,
+    "name": "Bordeaux Apache® Kafka Meetup by Confluent",
+    "status": "active",
+    "link": "https://www.meetup.com/Bordeaux-Kafka/",
+    "urlname": "Bordeaux-Kafka",
+    "description": "<p>This Meetup Group will focus on the Apache Kafka® technology and its ecosystem, also allowing its members to interact and share their use cases, do and don't, how to's, etc.</p>\n<p>We will also hear about the Confluent Platform and topics like Kafka's Connect API and streaming data pipelines, Kafka’s Streams API and stream processing, Security, Microservices and anything else related to Apache Kafka.</p>\n<p>If you want to hear about a particular topic please let us know and we will try to find the best possible speaker. We are also very open to this being an active platform for the community, so if you would like to participate in other ways like speaking, hosting, writing a blog, etc, please let us know on community@confluent.io</p>",
+    "created": 1548898190000,
+    "city": "Bordeaux",
+    "untranslated_city": "Bordeaux",
+    "country": "FR",
+    "localized_country_name": "France",
+    "localized_location": "Bordeaux, France",
+    "state": "",
+    "join_mode": "open",
+    "visibility": "public",
+    "lat": 44.84,
+    "lon": -0.58,
+    "members": 28,
+    "who": "Kafkateers",
+    "key_photo": {
+      "id": 478269924,
+      "highres_link": "https://secure.meetupstatic.com/photos/event/2/6/c/4/highres_478269924.jpeg",
+      "photo_link": "https://secure.meetupstatic.com/photos/event/2/6/c/4/600_478269924.jpeg",
+      "thumb_link": "https://secure.meetupstatic.com/photos/event/2/6/c/4/thumb_478269924.jpeg",
+      "type": "event",
+      "base_url": "https://secure.meetupstatic.com"
+    },
+    "timezone": "Europe/Paris",
+    "category": {
+      "id": 34,
+      "name": "Tech",
+      "shortname": "tech",
+      "sort_name": "Tech"
+    },
+    "meta_category": {
+      "id": 292,
+      "shortname": "tech",
+      "name": "Tech",
+      "sort_name": "Tech",
+      "photo": {
+        "id": 450131949,
+        "highres_link": "https://secure.meetupstatic.com/photos/event/2/e/a/d/highres_450131949.jpeg",
+        "photo_link": "https://secure.meetupstatic.com/photos/event/2/e/a/d/600_450131949.jpeg",
+        "thumb_link": "https://secure.meetupstatic.com/photos/event/2/e/a/d/thumb_450131949.jpeg",
+        "type": "event",
+        "base_url": "https://secure.meetupstatic.com"
+      },
+      "category_ids": [
+        34
+      ]
+    }
+  },
+  {
+    "id": 19153363,
+    "name": "Agile Bordeaux",
+    "status": "active",
+    "link": "https://www.meetup.com/Agile-Bordeaux/",
+    "urlname": "Agile-Bordeaux",
+    "description": "<p>Ce groupe s'adresse à tous ceux qui sont intéressées par les approches de management et d'organisation innovantes. Il prend la suite du ScrumWine dans le but d'élargir l'audience aux personnes intéressé par Scrum, mais aussi par d'autres approches s'appuyant sur les principes et valeurs agiles. Dans ce groupe, nous programmerons les rendez-vous Agile Bordeaux prenant la suite du ScrumWine, les rendez-vous du club de lecture, les rendez-vous Coaching Dojo !</p>",
+    "created": 1448439366000,
+    "city": "Bordeaux",
+    "untranslated_city": "Bordeaux",
+    "country": "FR",
+    "localized_country_name": "France",
+    "localized_location": "Bordeaux, France",
+    "state": "",
+    "join_mode": "open",
+    "visibility": "public",
+    "lat": 44.84,
+    "lon": -0.58,
+    "members": 798,
+    "who": "Membres",
+    "key_photo": {
+      "id": 445870299,
+      "highres_link": "https://secure.meetupstatic.com/photos/event/2/8/3/b/highres_445870299.jpeg",
+      "photo_link": "https://secure.meetupstatic.com/photos/event/2/8/3/b/600_445870299.jpeg",
+      "thumb_link": "https://secure.meetupstatic.com/photos/event/2/8/3/b/thumb_445870299.jpeg",
+      "type": "event",
+      "base_url": "https://secure.meetupstatic.com"
+    },
+    "timezone": "Europe/Paris",
+    "next_event": {
+      "id": "261328959",
+      "name": "Agile Bordeaux 19.2",
+      "yes_rsvp_count": 30,
+      "time": 1559839500000,
+      "utc_offset": 7200000
+    },
+    "category": {
+      "id": 34,
+      "name": "Tech",
+      "shortname": "tech",
+      "sort_name": "Tech"
+    },
+    "meta_category": {
+      "id": 292,
+      "shortname": "tech",
+      "name": "Tech",
+      "sort_name": "Tech",
+      "photo": {
+        "id": 450131949,
+        "highres_link": "https://secure.meetupstatic.com/photos/event/2/e/a/d/highres_450131949.jpeg",
+        "photo_link": "https://secure.meetupstatic.com/photos/event/2/e/a/d/600_450131949.jpeg",
+        "thumb_link": "https://secure.meetupstatic.com/photos/event/2/e/a/d/thumb_450131949.jpeg",
+        "type": "event",
+        "base_url": "https://secure.meetupstatic.com"
+      },
+      "category_ids": [
+        34
+      ]
+    }
+  },
+  {
+    "id": 18197674,
+    "name": "Bordeaux PHP Meetup",
+    "status": "active",
+    "link": "https://www.meetup.com/Bordeaux-PHP-Meetup/",
+    "urlname": "Bordeaux-PHP-Meetup",
+    "description": "Ce groupe s'adresse à tous les développeurs PHP, novices ou experts, désireux d'échanger sur cette techno et son écosysteme. L'idée est d'organiser régulièrement des meetups, sous forme de présentations, de lightning talks ..., et de se retrouver ensuite autour d'un apéro collaboratif.",
+    "created": 1416295486000,
+    "city": "Bordeaux",
+    "untranslated_city": "Bordeaux",
+    "country": "FR",
+    "localized_country_name": "France",
+    "localized_location": "Bordeaux, France",
+    "state": "",
+    "join_mode": "open",
+    "visibility": "public",
+    "lat": 44.84,
+    "lon": -0.58,
+    "members": 829,
+    "who": "PéHashPeurs",
+    "key_photo": {
+      "id": 466159427,
+      "highres_link": "https://secure.meetupstatic.com/photos/event/4/b/e/3/highres_466159427.jpeg",
+      "photo_link": "https://secure.meetupstatic.com/photos/event/4/b/e/3/600_466159427.jpeg",
+      "thumb_link": "https://secure.meetupstatic.com/photos/event/4/b/e/3/thumb_466159427.jpeg",
+      "type": "event",
+      "base_url": "https://secure.meetupstatic.com"
+    },
+    "timezone": "Europe/Paris",
+    "next_event": {
+      "id": "261041713",
+      "name": "Meetup PHP #28 : Architecture extensible avec Laravel",
+      "yes_rsvp_count": 14,
+      "time": 1558546200000,
+      "utc_offset": 7200000
+    },
+    "category": {
+      "id": 34,
+      "name": "Tech",
+      "shortname": "tech",
+      "sort_name": "Tech"
+    },
+    "meta_category": {
+      "id": 292,
+      "shortname": "tech",
+      "name": "Tech",
+      "sort_name": "Tech",
+      "photo": {
+        "id": 450131949,
+        "highres_link": "https://secure.meetupstatic.com/photos/event/2/e/a/d/highres_450131949.jpeg",
+        "photo_link": "https://secure.meetupstatic.com/photos/event/2/e/a/d/600_450131949.jpeg",
+        "thumb_link": "https://secure.meetupstatic.com/photos/event/2/e/a/d/thumb_450131949.jpeg",
+        "type": "event",
+        "base_url": "https://secure.meetupstatic.com"
+      },
+      "category_ids": [
+        34
+      ]
+    }
+  }
+]

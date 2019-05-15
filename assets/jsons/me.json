@@ -1,0 +1,20 @@
+{
+  "id": 79609112,
+  "name": "Visticot Frederic",
+  "email": "fvisticot@gmail.com",
+  "status": "active",
+  "joined": 1360195071000,
+  "city": "Paris",
+  "country": "fr",
+  "localized_country_name": "France",
+  "lat": 48.86,
+  "lon": 2.34,
+  "photo": {
+    "id": 96294642,
+    "photo_link": "https://secure.meetupstatic.com/photos/member/d/5/7/2/member_96294642.jpeg",
+    "thumb_link": "https://secure.meetupstatic.com/photos/member/d/5/7/2/thumb_96294642.jpeg",
+    "type": "member",
+    "base_url": "https://secure.meetupstatic.com"
+  },
+  "is_pro_admin": false
+}
