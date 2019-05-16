@@ -207,8 +207,8 @@ class AdaptativeMap extends StatelessWidget {
       return FlutterMap(
           options: MapOptions(
             interactive: false,
-            center: latlong.LatLng(51.5, -0.09),
-            zoom: 13.0,
+            center: latlong.LatLng(44.8541898, -0.5684943),
+            zoom: 15.0,
           ),
           layers: [
             new TileLayerOptions(
@@ -221,13 +221,30 @@ class AdaptativeMap extends StatelessWidget {
             )
           ]);
     } else {
-      return GoogleMap(
+      return FlutterMap(
+          options: MapOptions(
+            interactive: false,
+            center: latlong.LatLng(44.8541898, -0.5684943),
+            zoom: 15.0,
+          ),
+          layers: [
+            new TileLayerOptions(
+              urlTemplate: "https://api.tiles.mapbox.com/v4/"
+                  "{id}/{z}/{x}/{y}@2x.png?access_token=$kMapboxAccessToken",
+              additionalOptions: {
+                'accessToken': '$kMapboxAccessToken',
+                'id': 'mapbox.streets',
+              },
+            )
+          ]);
+
+      /*return GoogleMap(
           mapType: MapType.normal,
           myLocationButtonEnabled: false,
           initialCameraPosition: CameraPosition(
             target: LatLng(37.42796133580664, -122.085749655962),
             zoom: 14.4746,
-          ));
+          ));*/
     }
   }
 }
