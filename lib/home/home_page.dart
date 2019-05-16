@@ -43,7 +43,8 @@ class HomePage extends StatelessWidget {
               children: <Widget>[
                 Card(
                     elevation: 0,
-                    child: GroupsWidget(onSelectedGroup: (groupId) {
+                    child: GroupsWidget(onSelectedGroup: () {
+                      print("top");
                       Navigator.of(context).push(CupertinoPageRoute(
                           fullscreenDialog: false,
                           builder: (context) => GroupDetailPage()));

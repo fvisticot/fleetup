@@ -51,8 +51,10 @@ class GroupsWidget extends StatelessWidget {
                         scrollDirection: Axis.horizontal,
                         itemBuilder: (context, i) {
                           final group = state.groups[i];
-                          print('${group.name} ${group.keyPhoto?.highresLink}');
-                          return GroupTile(group);
+                          return GestureDetector(
+                            child: GroupTile(group),
+                            onTap: () => onSelectedGroup(),
+                          );
                         },
                         itemCount: state.groups.length,
                       );
@@ -118,53 +120,49 @@ class GroupTile extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.all(4.0),
-      child: InkWell(
-        onTap: () => print("coucou"),
-        highlightColor: Colors.grey,
-        child: ClipRRect(
-            borderRadius: BorderRadius.all(Radius.circular(4)),
-            child: AspectRatio(
-              aspectRatio: 3 / 4.5,
-              child: Container(
-                decoration: BoxDecoration(
-                  image: DecorationImage(
-                      fit: BoxFit.fitHeight,
-                      alignment: FractionalOffset.topCenter,
-                      image: NetworkImage(group.keyPhoto.highresLink)),
-                ),
-                child: Stack(
-                  fit: StackFit.expand,
-                  children: <Widget>[
-                    Container(
-                      decoration: BoxDecoration(
-                          gradient: LinearGradient(
-                              begin: Alignment.topCenter,
-                              end: Alignment.bottomCenter,
-                              colors: [
-                            Colors.black.withOpacity(0),
-                            Colors.black.withOpacity(1.0)
-                          ])),
-                    ),
-                    Align(
-                      alignment: Alignment.bottomLeft,
-                      child: Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: Text(
-                          group.name,
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 12,
-                            fontWeight: FontWeight.bold,
-                            fontFamily: 'NotoSans',
-                          ),
+      child: ClipRRect(
+          borderRadius: BorderRadius.all(Radius.circular(4)),
+          child: AspectRatio(
+            aspectRatio: 3 / 4.5,
+            child: Container(
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                    fit: BoxFit.fitHeight,
+                    alignment: FractionalOffset.topCenter,
+                    image: NetworkImage(group.keyPhoto.highresLink)),
+              ),
+              child: Stack(
+                fit: StackFit.expand,
+                children: <Widget>[
+                  Container(
+                    decoration: BoxDecoration(
+                        gradient: LinearGradient(
+                            begin: Alignment.topCenter,
+                            end: Alignment.bottomCenter,
+                            colors: [
+                          Colors.black.withOpacity(0),
+                          Colors.black.withOpacity(1.0)
+                        ])),
+                  ),
+                  Align(
+                    alignment: Alignment.bottomLeft,
+                    child: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Text(
+                        group.name,
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 12,
+                          fontWeight: FontWeight.bold,
+                          fontFamily: 'NotoSans',
                         ),
                       ),
-                    )
-                  ],
-                ),
+                    ),
+                  )
+                ],
               ),
-            )),
-      ),
+            ),
+          )),
     );
   }
 }
