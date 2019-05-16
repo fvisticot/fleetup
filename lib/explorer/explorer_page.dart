@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:fleetup/api/meetup_json_source.dart';
 import 'package:fleetup/api/meetup_repository.dart';
 import 'package:fleetup/api/topic_category.dart';
@@ -57,8 +58,12 @@ class FindEventWidget extends StatelessWidget {
                     ))
                   ]),
             ),
-            Image.network(
-                'https://images.pexels.com/photos/1171084/pexels-photo-1171084.jpeg?crop=entropy&cs=srgb&dl=action-aerial-athletes-1171084.jpg&fit=crop&fm=jpg&h=350&w=640'),
+            /*Image.network(
+                'https://images.pexels.com/photos/1171084/pexels-photo-1171084.jpeg?crop=entropy&cs=srgb&dl=action-aerial-athletes-1171084.jpg&fit=crop&fm=jpg&h=350&w=640'),*/
+            CachedNetworkImage(
+              imageUrl:
+                  'https://images.pexels.com/photos/1171084/pexels-photo-1171084.jpeg?crop=entropy&cs=srgb&dl=action-aerial-athletes-1171084.jpg&fit=crop&fm=jpg&h=350&w=640',
+            ),
             Container(
               height: 100,
             ),
@@ -204,13 +209,17 @@ class CategoryGridTile extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.start,
         mainAxisSize: MainAxisSize.max,
-        crossAxisAlignment: CrossAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
           ClipRRect(
             borderRadius: BorderRadius.all(Radius.circular(4)),
-            child: Image.network(
-              topicCategory.photo.highresLink,
-              fit: BoxFit.cover,
+            child: Container(
+              height: MediaQuery.of(context).size.height / 5,
+              width: MediaQuery.of(context).size.width * 0.5,
+              child: CachedNetworkImage(
+                imageUrl: topicCategory.photo.photoLink,
+                fit: BoxFit.cover,
+              ),
             ),
           ),
           SizedBox(
