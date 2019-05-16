@@ -58,8 +58,6 @@ class FindEventWidget extends StatelessWidget {
                     ))
                   ]),
             ),
-            /*Image.network(
-                'https://images.pexels.com/photos/1171084/pexels-photo-1171084.jpeg?crop=entropy&cs=srgb&dl=action-aerial-athletes-1171084.jpg&fit=crop&fm=jpg&h=350&w=640'),*/
             CachedNetworkImage(
               imageUrl:
                   'https://images.pexels.com/photos/1171084/pexels-photo-1171084.jpeg?crop=entropy&cs=srgb&dl=action-aerial-athletes-1171084.jpg&fit=crop&fm=jpg&h=350&w=640',
@@ -251,8 +249,12 @@ class EventDateFilter extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
-              Flexible(child: FleetupDateButton("Aujourd'hui")),
-              Flexible(child: FleetupDateButton('Demain'))
+              Flexible(
+                  child: FleetupDateButton(
+                "Aujourd'hui",
+                onPressed: () {},
+              )),
+              Flexible(child: FleetupDateButton('Demain', onPressed: () {}))
             ],
           ),
           Row(
@@ -260,8 +262,10 @@ class EventDateFilter extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
-              Flexible(child: FleetupDateButton("Cette semaine")),
-              Flexible(child: FleetupDateButton('Ce week-end'))
+              Flexible(
+                  child: FleetupDateButton("Cette semaine", onPressed: () {})),
+              Flexible(
+                  child: FleetupDateButton('Ce week-end', onPressed: () {}))
             ],
           ),
           Row(
@@ -269,8 +273,12 @@ class EventDateFilter extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
-              Flexible(child: FleetupDateButton("La semaine prochaine")),
-              Flexible(child: FleetupDateButton('Toutes les dates'))
+              Flexible(
+                  child: FleetupDateButton("La semaine prochaine",
+                      onPressed: () {})),
+              Flexible(
+                  child:
+                      FleetupDateButton('Toutes les dates', onPressed: () {}))
             ],
           )
         ],
