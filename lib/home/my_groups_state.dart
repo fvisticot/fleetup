@@ -6,20 +6,15 @@ abstract class MyGroupsState extends Equatable {
   MyGroupsState([List props = const []]) : super(props);
 }
 
-class MyGroupsInitial extends MyGroupsState {
-  @override
-  String toString() => 'MyGroupsInitial';
-}
-
 class MyGroupsLoading extends MyGroupsState {
   @override
   String toString() => 'MyGroupsLoading';
 }
 
-class MyGroupsSuccess extends MyGroupsState {
+class MyGroupsLoaded extends MyGroupsState {
   final List<Group> groups;
 
-  MyGroupsSuccess({this.groups = const []}) : super([groups]);
+  MyGroupsLoaded({this.groups = const []}) : super([groups]);
 
   @override
   String toString() {

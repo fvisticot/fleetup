@@ -1,5 +1,5 @@
 abstract class MyGroupsEvent {}
 
-class GetGroupsEvent extends MyGroupsEvent {
-  GetGroupsEvent();
+class LoadMyGroupsEvent extends MyGroupsEvent {
+  LoadMyGroupsEvent();
 }
