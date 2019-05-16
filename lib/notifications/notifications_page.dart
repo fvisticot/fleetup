@@ -5,7 +5,7 @@ import 'package:fleetup/notifications/notifications_bloc.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:html2md/html2md.dart' as html2md;
+import 'package:flutter_html/flutter_html.dart';
 
 import 'notifications.dart';
 
@@ -53,7 +53,6 @@ class NotificationListTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var leadingWidget;
-    String markdown = html2md.convert(notification.text);
 
     if (notification.photoType == PhotoTypeEnum.MEMBER) {
       if (notification.photo != null) {
@@ -78,26 +77,31 @@ class NotificationListTile extends StatelessWidget {
     }
 
     return Container(
-        padding: EdgeInsets.symmetric(horizontal: 8),
-        height: 80,
-        child: Row(
-          children: <Widget>[
-            if (leadingWidget != null) leadingWidget,
-            Padding(
+      padding: EdgeInsets.symmetric(horizontal: 8.0, vertical: 8.0),
+      child: Row(
+        children: <Widget>[
+          if (leadingWidget != null) leadingWidget,
+          Expanded(
+            child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
-                  //Markdown(data: markdown),
+                  Html(
+                    data: notification.text,
+                    useRichText: true,
+                  ),
                   Text(
                     'il y a 23 heures',
                     style: TextStyle(color: Colors.grey, fontSize: 9),
                   )
                 ],
               ),
-            )
-          ],
-        ));
+            ),
+          ),
+        ],
+      ),
+    );
   }
 }
