@@ -10,6 +10,30 @@ abstract class Styles {
     fontWeight: FontWeight.bold,
   );
 
+  static const nextEventTitleText = TextStyle(
+    color: lightGrayColor,
+    fontFamily: 'NotoSans',
+    fontSize: 13.0,
+    fontStyle: FontStyle.normal,
+    fontWeight: FontWeight.normal,
+  );
+
+  static const nextEventDescText = TextStyle(
+    color: Color.fromRGBO(0, 0, 0, 1),
+    fontFamily: 'NotoSans',
+    fontSize: 14.0,
+    fontStyle: FontStyle.normal,
+    fontWeight: FontWeight.bold,
+  );
+
+  static const nextEventInfoText = TextStyle(
+    color: lightGrayColor,
+    fontFamily: 'NotoSans',
+    fontSize: 13.0,
+    fontStyle: FontStyle.normal,
+    fontWeight: FontWeight.normal,
+  );
+
   static const explorerTitleText = TextStyle(
     color: Color.fromRGBO(0, 0, 0, 1),
     fontFamily: 'NotoSans',
@@ -82,4 +106,6 @@ abstract class Styles {
 
   static const Color topicCategoriesBackgroundColor =
       Color.fromRGBO(33, 33, 33, 1.0);
+
+  static const Color lightGrayColor = Color.fromRGBO(117, 117, 117, 1.0);
 }

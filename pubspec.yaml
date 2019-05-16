@@ -32,7 +32,7 @@ dependencies:
   flutter_map: ^0.5.0+1
   latlong: ^0.6.1
   flutter_html: ^0.9.8
-
+  url_launcher: ^5.0.2
 
 
 

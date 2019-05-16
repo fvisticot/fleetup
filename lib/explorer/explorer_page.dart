@@ -28,7 +28,7 @@ class FindEventWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Stack(
-      fit: StackFit.expand,
+      //fit: StackFit.expand,
       children: <Widget>[
         Container(
           child: Column(
