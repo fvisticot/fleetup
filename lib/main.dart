@@ -56,16 +56,33 @@ class MainPage extends StatelessWidget {
       tabBuilder: (context, index) {
         switch (index) {
           case 0:
-            return HomePage();
+            return CupertinoTabView(
+              builder: (BuildContext context) {
+                return HomePage();
+              },
+            );
             break;
           case 1:
-            return ExplorerPage();
+            return CupertinoTabView(
+              builder: (BuildContext context) {
+                return ExplorerPage();
+              },
+            );
             break;
           case 2:
-            return NotificationsPage();
+            return CupertinoTabView(
+              builder: (BuildContext context) {
+                return NotificationsPage();
+              },
+            );
             break;
           case 3:
-            return MessagesPage();
+            return CupertinoTabView(
+              builder: (BuildContext context) {
+                return MessagesPage();
+              },
+            );
+            break;
         }
       },
     );
