@@ -57,7 +57,7 @@ class NotificationListTile extends StatelessWidget {
     if (notification.photoType == PhotoTypeEnum.MEMBER) {
       if (notification.photo != null) {
         leadingWidget = CircleAvatar(
-          backgroundImage: NetworkImage(notification.photo.highresLink),
+          backgroundImage: NetworkImage(notification.photo.thumbLink),
         );
       } else {
         leadingWidget = CircleAvatar(
@@ -72,7 +72,7 @@ class NotificationListTile extends StatelessWidget {
             image: DecorationImage(
                 fit: BoxFit.fitHeight,
                 alignment: FractionalOffset.topCenter,
-                image: NetworkImage(notification.photo.highresLink)),
+                image: NetworkImage(notification.photo.thumbLink)),
           ));
     }
 

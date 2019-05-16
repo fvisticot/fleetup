@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:fleetup/api/meetup_json_source.dart';
 import 'package:fleetup/api/meetup_repository.dart';
 import 'package:fleetup/api/topic_category.dart';
@@ -14,12 +15,14 @@ class ExplorerPage extends StatelessWidget {
           backgroundColor: Colors.white,
           middle: Text('Explorer'),
         ),
-        child: ListView(
-          children: <Widget>[
-            FindEventWidget(),
-            DiscoverWidget(),
-            CategoriesWidget()
-          ],
+        child: SingleChildScrollView(
+          child: Column(
+            children: <Widget>[
+              FindEventWidget(),
+              DiscoverWidget(),
+              CategoriesWidget()
+            ],
+          ),
         ));
   }
 }
@@ -28,51 +31,51 @@ class FindEventWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Stack(
-      //fit: StackFit.expand,
+      alignment: AlignmentDirectional.center,
       children: <Widget>[
-        Container(
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: <Widget>[
-              Padding(
-                padding: const EdgeInsets.only(top: 30, left: 12.0),
-                child: Text('Trouver des événements près de',
-                    style: Styles.explorerTitleText),
-              ),
-              Padding(
-                padding: const EdgeInsets.only(left: 12.0),
+        Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: <Widget>[
+            Padding(
+              padding: const EdgeInsets.only(top: 30, left: 12.0),
+              child: Text('Trouver des événements près de',
+                  style: Styles.explorerTitleText),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(left: 12.0),
+              child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: <Widget>[
+                    Text('Pessac, France', style: Styles.explorerLocationText),
+                    CupertinoButton(
+                        child: Row(
+                      children: <Widget>[
+                        Icon(CupertinoIcons.location,
+                            color: Color.fromRGBO(222, 75, 93, 1)),
+                        Text('Modifier le logo',
+                            style: Styles.explorerUpdateLocationText)
+                      ],
+                    ))
+                  ]),
+            ),
+            CachedNetworkImage(
+              imageUrl:
+                  'https://images.pexels.com/photos/1171084/pexels-photo-1171084.jpeg?crop=entropy&cs=srgb&dl=action-aerial-athletes-1171084.jpg&fit=crop&fm=jpg&h=350&w=640',
+            ),
+            Container(
+              height: 100,
+            ),
+            FleetupButton(
                 child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: <Widget>[
-                      Text('Pessac, France',
-                          style: Styles.explorerLocationText),
-                      CupertinoButton(
-                          child: Row(
-                        children: <Widget>[
-                          Icon(CupertinoIcons.location,
-                              color: Color.fromRGBO(222, 75, 93, 1)),
-                          Text('Modifier le logo',
-                              style: Styles.explorerUpdateLocationText)
-                        ],
-                      ))
-                    ]),
-              ),
-              Image.network(
-                  'https://secure.meetupstatic.com/photos/event/6/5/c/6/600_475586054.jpeg'),
-              Container(
-                height: 100,
-              ),
-              FleetupButton(
-                  child: Row(
-                children: <Widget>[
-                  Icon(CupertinoIcons.search),
-                  Text('Trouver un groupe spécifique')
-                ],
-              )),
-            ],
-          ),
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                Icon(CupertinoIcons.search),
+                Text('Trouver un groupe spécifique')
+              ],
+            )),
+          ],
         ),
-        Align(alignment: Alignment.bottomCenter, child: EventDateFilter())
+        Positioned(bottom: 60, child: EventDateFilter())
       ],
     );
   }
@@ -123,7 +126,7 @@ class EventListTile extends StatelessWidget {
               ClipRRect(
                 borderRadius: BorderRadius.all(Radius.circular(4)),
                 child: Image.network(
-                  'https://secure.meetupstatic.com/photos/event/6/5/c/6/600_475586054.jpeg',
+                  'https://secure.meetupstatic.com/photos/event/2/e/a/d/600_450131949.jpeg',
                   fit: BoxFit.cover,
                 ),
               ),
@@ -204,13 +207,17 @@ class CategoryGridTile extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.start,
         mainAxisSize: MainAxisSize.max,
-        crossAxisAlignment: CrossAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
           ClipRRect(
             borderRadius: BorderRadius.all(Radius.circular(4)),
-            child: Image.network(
-              topicCategory.photo.highresLink,
-              fit: BoxFit.cover,
+            child: Container(
+              height: MediaQuery.of(context).size.height / 5,
+              width: MediaQuery.of(context).size.width * 0.5,
+              child: CachedNetworkImage(
+                imageUrl: topicCategory.photo.photoLink,
+                fit: BoxFit.cover,
+              ),
             ),
           ),
           SizedBox(
@@ -230,13 +237,11 @@ class EventDateFilter extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      /*decoration: BoxDecoration(boxShadow: [
+      width: MediaQuery.of(context).size.width * 0.95,
+      decoration: BoxDecoration(boxShadow: [
         BoxShadow(
-          color: Colors.grey,
-          offset: new Offset(3.0, 3.0),
-        )
-      ])*/
-      padding: const EdgeInsets.symmetric(horizontal: 20),
+            color: Colors.grey, offset: new Offset(0.0, 5.0), blurRadius: 5.0)
+      ]),
       child: Column(
         children: <Widget>[
           Row(
@@ -244,8 +249,12 @@ class EventDateFilter extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
-              Flexible(child: FleetupDateButton("Aujourd'hui")),
-              Flexible(child: FleetupDateButton('Demain'))
+              Flexible(
+                  child: FleetupDateButton(
+                "Aujourd'hui",
+                onPressed: () {},
+              )),
+              Flexible(child: FleetupDateButton('Demain', onPressed: () {}))
             ],
           ),
           Row(
@@ -253,8 +262,10 @@ class EventDateFilter extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
-              Flexible(child: FleetupDateButton("Cette semaine")),
-              Flexible(child: FleetupDateButton('Ce week-end'))
+              Flexible(
+                  child: FleetupDateButton("Cette semaine", onPressed: () {})),
+              Flexible(
+                  child: FleetupDateButton('Ce week-end', onPressed: () {}))
             ],
           ),
           Row(
@@ -262,14 +273,16 @@ class EventDateFilter extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
-              Flexible(child: FleetupDateButton("La semaine prochaine")),
-              Flexible(child: FleetupDateButton('Toutes les dates'))
+              Flexible(
+                  child: FleetupDateButton("La semaine prochaine",
+                      onPressed: () {})),
+              Flexible(
+                  child:
+                      FleetupDateButton('Toutes les dates', onPressed: () {}))
             ],
           )
         ],
       ),
     );
-
-    //return FleetupButton(child: Text("Aujourd'hui"));
   }
 }
