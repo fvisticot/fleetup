@@ -212,8 +212,6 @@ class CategoryGridTile extends StatelessWidget {
           ClipRRect(
             borderRadius: BorderRadius.all(Radius.circular(4)),
             child: Container(
-              height: MediaQuery.of(context).size.height / 5,
-              width: MediaQuery.of(context).size.width * 0.5,
               child: CachedNetworkImage(
                 imageUrl: topicCategory.photo.photoLink,
                 fit: BoxFit.cover,
